@@ -26,7 +26,7 @@
   </AddIn>
   <AddIn Type="Application">
     <Name>Koten</Name>
-    <Assembly>Koten.dll</Assembly>a
+    <Assembly>Koten.dll</Assembly>
     <AddInId>
       C228A610-A9B1-49BA-B64F-9FE5C3832197
     </AddInId>
