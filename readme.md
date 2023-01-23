@@ -1,6 +1,6 @@
 # Koten værktøj
 
-![Logo of the project](https://raw.githubusercontent.com/KotenAPI/koten-installer/logo.png)
+![Logo of the project](https://github.com/KotenAPI/koten-installer/blob/master/Logo.png)
 # Koten
 > Installer for Koten
 
