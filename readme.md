@@ -24,7 +24,7 @@ C:\Users\YOURNAME\AppData\Roaming\Autodesk\Revit\Addins
 
 ### Getting started
 
-* Toturials: https://Koten.dk/Support
+* Tutorials: https://Koten.dk/Support
 
 ### Compatibility
 
