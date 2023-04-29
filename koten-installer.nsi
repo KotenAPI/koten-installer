@@ -1,7 +1,7 @@
 # Definitions
 !define APPNAME "Koten"
 !define COMPANYNAME "Koten"
-!define DESCRIPTION "Automatiseret viden, LCA og Beskrivelses-værktøjer"
+!define DESCRIPTION "Automatiseret viden, LCA og Beskrivelses-vaerktoejer"
 !define VERSIONMAJOR 1
 !define VERSIONMINOR 23
 
@@ -12,8 +12,8 @@
 !define ABOUTURL "https://koten.dk"
 !define UNINSTALLER_NAME "uninstall-koten.exe"
 
-## TODO Casper - insert correct install size (in kilobytes)
-!define INSTALLSIZE 1234
+## Install size (in kilobytes), use installer estimate here
+!define INSTALLSIZE 210000
 
 # Metadata for installer
 LicenseData "license.rtf"
@@ -61,7 +61,7 @@ Section "install"
     # Write an uninstaller (and Windows registry to register the uninstaller)
     writeUninstaller "$INSTDIR\${UNINSTALLER_NAME}"
     	# Registry information for add/remove programs
-	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}" "DisplayName" "${COMPANYNAME} - ${APPNAME} - ${DESCRIPTION}"
+	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}" "DisplayName" "${APPNAME} - ${DESCRIPTION}"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}" "UninstallString" "$\"$INSTDIR\${UNINSTALLER_NAME}$\""
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}" "QuietUninstallString" "$\"$INSTDIR\${UNINSTALLER_NAME}$\" /S"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${COMPANYNAME} ${APPNAME}" "InstallLocation" "$\"$INSTDIR$\""
