@@ -3,6 +3,7 @@
 !include "LogicLib.nsh"
 !include "WinVer.nsh"
 !include "x64.nsh"
+!include "replacebetween.nsh"
 Unicode true
 
 # Definitions
@@ -58,21 +59,37 @@ VIAddVersionKey "FileVersion" "${SETUP_VERSION}"
 
 # What the installer actually does
 Section "Autodesk 2020"
+	SetOutPath "${ADDIN_DIR}\2020\"
+	File "2020\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2020\Koten.dll" "${ADDIN_DIR}\2020\Koten.addin"
+
 	SetOutPath "$INSTDIR\2020\"
     File "2020\"
 SectionEnd
 
 Section "Autodesk 2021"
+	SetOutPath "${ADDIN_DIR}\2021\"
+	File "2021\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2021\Koten.dll" "${ADDIN_DIR}\2021\Koten.addin"
+
 	SetOutPath "$INSTDIR\2021\"
     File "2021\"
 SectionEnd
 
 Section "Autodesk 2022"
+	SetOutPath "${ADDIN_DIR}\2022\"
+	File "2021\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2022\Koten.dll" "${ADDIN_DIR}\2022\Koten.addin"
+
     SetOutPath "$INSTDIR\2022\"
     File "2021\"
 SectionEnd
 
 Section "Autodesk 2023"
+	SetOutPath "${ADDIN_DIR}\2023\"
+	File "2021\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2023\Koten.dll" "${ADDIN_DIR}\2023\Koten.addin"
+
     SetOutPath "$INSTDIR\2023\"
     File "2021\"
 SectionEnd
@@ -102,8 +119,14 @@ SectionEnd
 
 # Uninstaller
 
-section "Uninstall" 
-	# Remove files (done crudely at this point, would potentially wipe other addins
+section "Uninstall"
+	# Remove addin file from autodesk folder
+	delete "${ADDIN_DIR}\2020\Koten.addin"
+	delete "${ADDIN_DIR}\2021\Koten.addin"
+	delete "${ADDIN_DIR}\2022\Koten.addin"
+	delete "${ADDIN_DIR}\2023\Koten.addin"
+
+	# Remove our local files (usually in the program files folder)
 	RMDir /r "$INSTDIR\2020\"
 	RMDir /r "$INSTDIR\2021\"
 	RMDir /r "$INSTDIR\2022\"
