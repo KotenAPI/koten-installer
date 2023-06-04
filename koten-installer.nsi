@@ -58,7 +58,7 @@ VIAddVersionKey "FileVersion" "${SETUP_VERSION}"
 !insertmacro MUI_LANGUAGE "English"
 
 # What the installer actually does
-Section "Autodesk 2020"
+Section "Autodesk Revit 2020"
 	SetOutPath "${ADDIN_DIR}\2020\"
 	File "2020\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2020\Koten.dll" "${ADDIN_DIR}\2020\Koten.addin"
@@ -67,7 +67,7 @@ Section "Autodesk 2020"
     File "2020\"
 SectionEnd
 
-Section "Autodesk 2021"
+Section "Autodesk Revit 2021"
 	SetOutPath "${ADDIN_DIR}\2021\"
 	File "2021\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2021\Koten.dll" "${ADDIN_DIR}\2021\Koten.addin"
@@ -76,7 +76,7 @@ Section "Autodesk 2021"
     File "2021\"
 SectionEnd
 
-Section "Autodesk 2022"
+Section "Autodesk Revit 2022"
 	SetOutPath "${ADDIN_DIR}\2022\"
 	File "2021\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2022\Koten.dll" "${ADDIN_DIR}\2022\Koten.addin"
@@ -85,7 +85,7 @@ Section "Autodesk 2022"
     File "2021\"
 SectionEnd
 
-Section "Autodesk 2023"
+Section "Autodesk Revit 2023"
 	SetOutPath "${ADDIN_DIR}\2023\"
 	File "2021\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2023\Koten.dll" "${ADDIN_DIR}\2023\Koten.addin"
