@@ -14,6 +14,10 @@ Unicode true
 !define PRODUCT_VERSION "0.1.23.0"
 !define SETUP_VERSION 0.1.23.0
 
+# Icons and images
+!define MUI_ICON "koten-black.ico"
+!define MUI_UNICON "koten-black.ico"
+
 !define ADDIN_DIR "$AppData\Autodesk\Revit\Addins"
 Name "Koten"
 OutFile "koten-installer.exe"
