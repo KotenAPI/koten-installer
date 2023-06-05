@@ -1,30 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <RevitAddIns>
-	<AddIn Type="Command">
-		<Name>Koten</Name>
-		<Assembly>Koten.dll</Assembly>
-		<AddInId>
-			EBEC189B-713A-4F27-BDB2-B8663407F49F
-		</AddInId>
-		<FullClassName>Koten.Co2Visual</FullClassName>
-		<Text>Co2 Visual</Text>
-		<Description>Creates keynote descriptions</Description>
-		<VendorId>Casper</VendorId>
-		<VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
-	</AddIn>
-  <AddIn Type="Command">
-    <Name>Koten</Name>
-    <Assembly>Koten.dll</Assembly>
-    <AddInId>
-      AD8D56EE-217F-4DC8-92F0-A6FAFD35DB9D
-    </AddInId>
-    <FullClassName>Koten.Co2Impact</FullClassName>
-    <Text>Co2Impact</Text>
-    <Description>Get id from a selected element</Description>
-    <VendorId>Casper</VendorId>
-    <VisibilityMode>NotVisibleWhenNoActiveDocument</VisibilityMode>
-  </AddIn>
-  <AddIn Type="Application">
+	<AddIn Type="Application">
     <Name>Koten</Name>
     <Assembly>Koten.dll</Assembly>
     <AddInId>

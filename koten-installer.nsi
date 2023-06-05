@@ -62,15 +62,6 @@ VIAddVersionKey "FileVersion" "${SETUP_VERSION}"
 !insertmacro MUI_LANGUAGE "English"
 
 # What the installer actually does
-Section "Autodesk Revit 2020"
-	SetOutPath "${ADDIN_DIR}\2020\"
-	File "2020\Koten.addin"
-	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2020\Koten.dll" "${ADDIN_DIR}\2020\Koten.addin"
-
-	SetOutPath "$INSTDIR\2020\"
-    File "2020\"
-SectionEnd
-
 Section "Autodesk Revit 2021"
 	SetOutPath "${ADDIN_DIR}\2021\"
 	File "2021\Koten.addin"
@@ -95,6 +86,15 @@ Section "Autodesk Revit 2023"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2023\Koten.dll" "${ADDIN_DIR}\2023\Koten.addin"
 
     SetOutPath "$INSTDIR\2023\"
+    File "2021\"
+SectionEnd
+
+Section "Autodesk Revit 2024"
+	SetOutPath "${ADDIN_DIR}\2024\"
+	File "2021\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2024\Koten.dll" "${ADDIN_DIR}\2024\Koten.addin"
+
+	SetOutPath "$INSTDIR\2024\"
     File "2021\"
 SectionEnd
 
@@ -125,16 +125,16 @@ SectionEnd
 
 section "Uninstall"
 	# Remove addin file from autodesk folder
-	delete "${ADDIN_DIR}\2020\Koten.addin"
 	delete "${ADDIN_DIR}\2021\Koten.addin"
 	delete "${ADDIN_DIR}\2022\Koten.addin"
 	delete "${ADDIN_DIR}\2023\Koten.addin"
+	delete "${ADDIN_DIR}\2024\Koten.addin"
 
 	# Remove our local files (usually in the program files folder)
-	RMDir /r "$INSTDIR\2020\"
 	RMDir /r "$INSTDIR\2021\"
 	RMDir /r "$INSTDIR\2022\"
 	RMDir /r "$INSTDIR\2023\"
+	RMDir /r "$INSTDIR\2024\"
  
 	# Always delete uninstaller as the last action
 	delete "$INSTDIR\${UNINSTALLER_NAME}"

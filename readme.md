@@ -20,7 +20,7 @@ You can install Koten without admin acces by following these steps:
 ```bash
 C:\Users\YOURNAME\AppData\Roaming\Autodesk\Revit\Addins
 ```
-> Note: 2021 folder i compliant with 2022 and 2023
+> Note: 2021 folder i compliant with version >= 2021
 
 ### Getting started
 
@@ -29,10 +29,10 @@ C:\Users\YOURNAME\AppData\Roaming\Autodesk\Revit\Addins
 ### Compatibility
 
 The following Revit versions are compatible:
-* Revit 2020
 * Revit 2021
 * Revit 2022
 * Revit 2023
+* Revit 2024
 
 ## Developing
 
