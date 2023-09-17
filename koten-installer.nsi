@@ -11,7 +11,7 @@ Unicode true
 !define PRODUCT_NAME "Koten"
 !define PRODUCT_DESCRIPTION "Automatiseret viden, LCA og Beskrivelses-værktøjer"
 !define COPYRIGHT "Copyright © 2023 Koten"
-!define PRODUCT_VERSION "0.1.23.0"
+!define PRODUCT_VERSION "1.0.3.0"
 !define SETUP_VERSION 0.1.23.0
 
 # Icons and images
@@ -44,7 +44,7 @@ VIAddVersionKey "FileVersion" "${SETUP_VERSION}"
 !define INSTALLSIZE 210000
 
 # Welcome page
-!define MUI_WELCOMEPAGE_TITLE "Velkommen til koten!"
+!define MUI_WELCOMEPAGE_TITLE "Velkommen til Koten!"
 !define MUI_WELCOMEPAGE_TEXT "Koten understøtter flere forskellige versioner af Autodesk. Vælg hvilke(n) version(er) Koten skal installeres for på en af de følgende sider."
 
 ### CODING FOLLOWS! DO NOT CHANGE UNLESS YOU KNOW WHAT YOU ARE DOING ###
