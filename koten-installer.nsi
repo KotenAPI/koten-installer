@@ -64,20 +64,20 @@ VIAddVersionKey "FileVersion" "${SETUP_VERSION}"
 # What the installer actually does
 Section "Autodesk Revit 2025"
 	SetOutPath "${ADDIN_DIR}\2025\"
-	File "2021\Koten.addin"
+	File "2025\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2025\Koten.dll" "${ADDIN_DIR}\2025\Koten.addin"
 
 	SetOutPath "$INSTDIR\2025\"
-	File "2021\"
+	File "2025\"
 SectionEnd
 
 Section "Autodesk Revit 2026"
 	SetOutPath "${ADDIN_DIR}\2026\"
-	File "2021\Koten.addin"
+	File "2025\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2026\Koten.dll" "${ADDIN_DIR}\2026\Koten.addin"
 
 	SetOutPath "$INSTDIR\2026\"
-	File "2021\"
+	File "2025\"
 SectionEnd
 
 Section "-hidden section"
