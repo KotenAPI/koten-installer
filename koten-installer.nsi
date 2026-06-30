@@ -73,11 +73,11 @@ SectionEnd
 
 Section "Autodesk Revit 2026"
 	SetOutPath "${ADDIN_DIR}\2026\"
-	File "2025\Koten.addin"
+	File "2026\Koten.addin"
 	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2026\Koten.dll" "${ADDIN_DIR}\2026\Koten.addin"
 
 	SetOutPath "$INSTDIR\2026\"
-	File "2025\"
+	File "2026\"
 SectionEnd
 
 Section "Autodesk Revit 2027"
