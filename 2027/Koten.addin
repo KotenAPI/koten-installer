@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Koten</Name>
+    <Assembly>Koten.dll</Assembly>
+    <AddInId>C228A610-A9B1-49BA-B64F-9FE5C3832197</AddInId>
+    <FullClassName>Koten.KotenRibbon</FullClassName>
+    <VendorId>Casper</VendorId>
+  </AddIn>
+  <ManifestSettings>
+    <UseRevitContext>False</UseRevitContext>
+    <ContextName>Koten</ContextName>
+  </ManifestSettings>
+</RevitAddIns>

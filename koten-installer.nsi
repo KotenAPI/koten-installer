@@ -80,6 +80,15 @@ Section "Autodesk Revit 2026"
 	File "2025\"
 SectionEnd
 
+Section "Autodesk Revit 2027"
+	SetOutPath "${ADDIN_DIR}\2027\"
+	File "2027\Koten.addin"
+	${ReplaceBetween} "<Assembly>" "</Assembly>" "$INSTDIR\2027\Koten.dll" "${ADDIN_DIR}\2027\Koten.addin"
+
+	SetOutPath "$INSTDIR\2027\"
+	File "2027\"
+SectionEnd
+
 Section "-hidden section"
 	# Write an uninstaller (and Windows registry to register the uninstaller)
     writeUninstaller "$INSTDIR\${UNINSTALLER_NAME}"
@@ -109,10 +118,12 @@ section "Uninstall"
 	# Remove addin file from autodesk folder
 	delete "${ADDIN_DIR}\2025\Koten.addin"
 	delete "${ADDIN_DIR}\2026\Koten.addin"
+	delete "${ADDIN_DIR}\2027\Koten.addin"
 
 	# Remove our local files (usually in the program files folder)
 	RMDir /r "$INSTDIR\2025\"
 	RMDir /r "$INSTDIR\2026\"
+	RMDir /r "$INSTDIR\2027\"
  
 	# Always delete uninstaller as the last action
 	delete "$INSTDIR\${UNINSTALLER_NAME}"

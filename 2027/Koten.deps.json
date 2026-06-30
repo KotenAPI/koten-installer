@@ -1,19 +1,18 @@
 {
   "runtimeTarget": {
-    "name": ".NETCoreApp,Version=v8.0",
+    "name": ".NETCoreApp,Version=v10.0",
     "signature": ""
   },
   "compilationOptions": {},
   "targets": {
-    ".NETCoreApp,Version=v8.0": {
+    ".NETCoreApp,Version=v10.0": {
       "Koten/2.1.0": {
         "dependencies": {
           "FuzzySharp": "2.0.2",
           "LiveCharts.NetCore": "0.9.7",
           "Newtonsoft.Json": "13.0.4",
           "Npoi.Mapper": "6.2.2",
-          "Octokit": "14.0.0",
-          "System.Text.Encoding.CodePages": "9.0.0"
+          "Octokit": "14.0.0"
         },
         "runtime": {
           "Koten.dll": {}
@@ -158,29 +157,10 @@
         }
       },
       "SixLabors.ImageSharp/2.1.8": {
-        "dependencies": {
-          "System.Text.Encoding.CodePages": "9.0.0"
-        },
         "runtime": {
           "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.1.8.0"
-          }
-        }
-      },
-      "System.Text.Encoding.CodePages/9.0.0": {
-        "runtime": {
-          "lib/net8.0/System.Text.Encoding.CodePages.dll": {
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/net8.0/System.Text.Encoding.CodePages.dll": {
-            "rid": "win",
-            "assetType": "runtime",
-            "assemblyVersion": "9.0.0.0",
-            "fileVersion": "9.0.24.52809"
           }
         }
       }
@@ -296,13 +276,6 @@
       "sha512": "sha512-ML1++vactR5xMW36wHA2nAX3vc6VpR62qYnpopQdLNGbP8BAJ/ckv1IrGIIFRUEQ0JS9EgWr1y1gEa/81f+HaA==",
       "path": "sixlabors.imagesharp/2.1.8",
       "hashPath": "sixlabors.imagesharp.2.1.8.nupkg.sha512"
-    },
-    "System.Text.Encoding.CodePages/9.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GxJTSFPQpoVd0vQRgq8hwesicxgZoHTbYMvR/UMM4IzhkHMT+ebZE11c2C1gUyxz55zWtGCWktMTHvmgLzob9g==",
-      "path": "system.text.encoding.codepages/9.0.0",
-      "hashPath": "system.text.encoding.codepages.9.0.0.nupkg.sha512"
     }
   }
 }
