@@ -29,10 +29,9 @@ C:\Users\YOURNAME\AppData\Roaming\Autodesk\Revit\Addins
 ### Compatibility
 
 The following Revit versions are compatible:
-* Revit 2021
-* Revit 2022
-* Revit 2023
-* Revit 2024
+* Revit 2025
+* Revit 2026
+* Revit 2027
 
 ## Developing
 
@@ -44,8 +43,8 @@ Built using NSIS https://nsis.sourceforge.io/Main_Page
 
 Tools for:
 * LCA 
-* Decriptions 
-* Etc.
+* Keynote 
+* QA
 
 See more: https://Koten.dk/features
 
